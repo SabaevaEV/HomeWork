@@ -1,28 +1,25 @@
-﻿// Задача 10 Напишите программу, которая принимает на вход трехзначное число и на выходе показывает вторую цифру этого числа
+﻿// Задача 10 Напишите программу, которая принимает на вход трехзначное число и на выходе
+//показывает вторую цифру этого числа
 
-int EnterDigit()
+int SecondDigit(int num)
 {
-Console.WriteLine("Введите трехзначное число ");
-int x = int.Parse(Console.ReadLine()!);
-return x;
+  int secondNumber = num / 10 % 10; //определение второго числа
+  return secondNumber;
 }
 
-int FirstDigit(int x)
+void EnterSecondDigit (int num)
 {
-    int num = x/10;
-    return num;
+ if (num < 100 || num > 1000)
+{
+  Console.WriteLine ("Введено не трехзначное число");
 }
- int MiddleDigit (int num)
- {
-    int arg = num % 10;
-    return arg;
- }
+else
+{
+  int result =  SecondDigit(num);
+  Console.WriteLine ("Вторая цифра введенного числа: " + result); 
+}
+}
 
-void FindMiddle (int arg)
-{
-  Console.WriteLine("Вторая цифра введенного Вами числа: " + arg);  
-}
-int x = EnterDigit();
-int num = FirstDigit (x);
-int arg = MiddleDigit (num);
-FindMiddle(arg);
+Console.WriteLine("Введите трехзначное число: ");
+int number = int.Parse(Console.ReadLine()!);
+EnterSecondDigit (number);
