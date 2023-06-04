@@ -62,20 +62,21 @@
 //782 -> 72
 //918 -> 98
 
-// int FindFirstDigit ( int num)
-// {
-//   int firstNumber = num / 100; //определение первого числа  
-//   return  firstNumber;
-// }
-// int FindThirdDigit ( int num)
-// {
-//   int thirdNumber = num % 10; //определение  числа 
-//   return  thirdNumber; 
-// }
+int FindFirstDigit ( int num)
+{
+  int firstNumber = num / 100; //определение первого числа  
+  return  firstNumber;
+}
+int FindThirdDigit ( int num)
+{
+  int thirdNumber = num % 10; //определение  числа 
+  return  thirdNumber; 
+}
 
-// int number = new Random().Next(100,1000);
-// Console.WriteLine("Рандомное трехзначное число: " + number);
-// Console.WriteLine("Полученное число без второй цифры: "+ FindFirstDigit (number) + FindThirdDigit (number));
+int number = new Random().Next(100,1000);
+Console.WriteLine("Рандомное трехзначное число: " + number);
+int result = FindFirstDigit (number)*10 + FindThirdDigit (number);
+Console.WriteLine("Полученное число без второй цифры: "+ result);
 
 
 
@@ -111,25 +112,25 @@
 // }
 
 
-void FindDigit (int num1, int num2)
-{
+//void FindDigit (int num1, int num2)
+//{
 // Console.Write ("Введите первое число: ");
 // int number1 = int.Parse (Console.ReadLine()!);
 // Console.Write ("Введите второе число: ");
 // int number2 = int.Parse (Console.ReadLine()!);
 
-if (num2 % num1 == 0)
- {
-     Console.WriteLine ("Второе число является кратным первому");
- }
- else 
- {
-    int remainder = num2 % num1;
-    Console.WriteLine ("Второе число не кратно первому, остаток деления: " + remainder);
-}}
-Console.Write ("Введите первое число: ");
-int number1 = int.Parse (Console.ReadLine()!);
-Console.Write ("Введите второе число: ");
-int number2 = int.Parse (Console.ReadLine()!);
+// if (num2 % num1 == 0)
+//  {
+//      Console.WriteLine ("Второе число является кратным первому");
+//  }
+//  else 
+//  {
+//     int remainder = num2 % num1;
+//     Console.WriteLine ("Второе число не кратно первому, остаток деления: " + remainder);
+// }}
+// Console.Write ("Введите первое число: ");
+// int number1 = int.Parse (Console.ReadLine()!);
+// Console.Write ("Введите второе число: ");
+// int number2 = int.Parse (Console.ReadLine()!);
 
-FindDigit (number1,number2);
+// FindDigit (number1,number2);
