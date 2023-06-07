@@ -4,9 +4,15 @@
 int Prompt (string message) // метод ввода данных - 1!
 {
     Console.Write(message);
-    int num = int.Parse(Console.ReadLine()!); // конвертируем данные
+    int num = int.Parse(Console.ReadLine()!); // конвертируем данные (для целочисленных данных)
     return num;
 }
+// int Prompt (string message) {
+// Console.Write(message);
+// int num = Convert.ToInt32(Console.ReadLine()); // Вариант конвертирования данных !! ToInt32-
+// return num;                                        (с плавающей запятой)
+// }
+
 void FindCoordinatePart (int num)
 {
     if ( num ==1)
