@@ -26,6 +26,7 @@ else
     int thirdDigit = num % 10;
     Console.WriteLine ("Третья цифра заданного числа " + thirdDigit);
     // Console.WriteLine ($"Третья цифра числа - > {thirdNumber}"); - вариант вывода результата
+    // знак $ - для вывода переменной thirdNumber, нужны кавычки {}
 }
 }
 
