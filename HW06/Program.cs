@@ -7,7 +7,7 @@
 int Prompt (string message)
 {
     Console.Write(message);
-    int num = int.Parse(Console.ReadLine()!);
+    int num = int.Parse(Console.ReadLine()!); // метод ввода данных - 1
     return num;
 }
 
@@ -25,8 +25,9 @@ else
     }
     int thirdDigit = num % 10;
     Console.WriteLine ("Третья цифра заданного числа " + thirdDigit);
+    // Console.WriteLine ($"Третья цифра числа - > {thirdNumber}"); - вариант вывода результата
 }
 }
 
-int number = Prompt ("Введите число: ");
+int number = Prompt ("Введите число: ");// СМ.выше 1
 FindThirdDigit (number);
