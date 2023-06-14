@@ -15,10 +15,14 @@ int FindPolindrom (int num)
 {
     int n = num ;
     int rev = 0 ;
-    do { int r = n % 10;
+    while (n > 0)
+     { int r = n % 10;
        rev = rev*10 + r;
        n = n / 10;}
-    while (n > 0);
+    // do { int r = n % 10;
+    //    rev = rev*10 + r; // 1 вариант расчета
+    //    n = n / 10;}
+    // while (n > 0);
     return rev;
     }
 
