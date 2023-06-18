@@ -16,7 +16,7 @@ double [] RandomMassive (int number)
 double [] array = new double [number];
 for (int i = 0; i < array.Length; i++)
 {
-array [i] = new Random ().Next ( 0, 10000)/100.00;
+array [i] = new Random ().Next ( 0, 10000)/100.00; // new Random ().NextDouble ()*100
 Console.Write (array [i] + " ");
 }
 return array;
