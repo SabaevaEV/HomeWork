@@ -49,7 +49,7 @@ void FindAverageDigit(double[,] arr)
         {
             sum = sum + arr[i, j];
         }
-        average = Math.Round(sum / arr.GetLength(1), 2);
+        average = Math.Round(sum / arr.GetLength(0), 2);
         Console.WriteLine($"Среднее арифметическое столбца {j + 1} равно: {average} ");
     }
 }
