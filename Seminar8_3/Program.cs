@@ -22,12 +22,12 @@ Console.WriteLine();
 int Prompt (string msg)
 {
     Console.Write(msg);
-    string value = Console.ReadLine();
+    string value = Console.ReadLine()!;
     int val = 0;
     while ((int.TryParse(value, out val)) != true)
     {
         Console.Write("Неверный ввод. Повторите: ");
-        value = Console.ReadLine();
+        value = Console.ReadLine()!;
     }
     Console.Clear();
     return val;
