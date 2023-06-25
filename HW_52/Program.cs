@@ -12,7 +12,11 @@ int Prompt(string message)
     int number = int.Parse(Console.ReadLine()!);
     return number;
 }
-
+// можно сделать рандом по другому!!!!
+// Random rnd = new Random (); - объявить его так и потом..
+// result[i, j] = new Random().Next(minValue, maxValue); поменять на
+// result[i, j] = rnd.Next(minValue, maxValue);
+// для оптимизации кода!!!!
 int[,] GetArray(int m, int n, int minValue, int maxValue)
 {
     int[,] result = new int[m, n];
